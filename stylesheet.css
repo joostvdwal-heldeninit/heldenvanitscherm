@@ -1,17 +1,19 @@
-#logo {
+.logo {
     position: absolute;
     height: 25%;
+    width: 25%;
     float: left;
     bottom: auto;
+    z-index: 3;
 }
 
-.container {
+.achtergrond {
     position: static;
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
     display: flex;
-    background-image: url("hITPurmerendAchtergrondFoto.png");
+    background-image: url("AchtergrondFoto.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -19,7 +21,7 @@
     min-height: 98vh;
 }
 
-.container::before {
+.achtergrond::before {
     content: '';
     position: absolute;
     top: 0;
@@ -32,63 +34,21 @@
     z-index: 1;
 }
 
-.container > * {
+.achtergrond > * {
     position: relative;
     z-index: 2;
 }
 
-#tijdafspraak {
-    position: absolute;
-    top: 40%;
-    color: white;
-    left: 10%;
-}
-
-#tijdafspraak2 {
-    position: absolute;
-    top: 60%;
-    color: white;
-    left: 10%;
-}
-
-#datum {
+.datum {
     position: absolute;
     color: white;
-    left: 89%;
-    top: 80%;
+    left: 87%;
+    top: 84%;
 }
 
-#tijd {
+.tijd {
      position: absolute;
      color: white;
-     left: 90%;
-     top: 90%;
-}
-
-#afspraak {
-     position: absolute;
-     color: white;
-     top: 45%;
-     left: 10%;
-}
-
-#afspraak2 {
-    position: absolute;
-    color: white;
-    top: 65%;
-    left: 10%;
-}
-
-#toelichting {
-     position: absolute;
-     color: white;
-     top: 70%;
-     left: 10%;
-}
-
-#toelichting2 {
-    position: absolute;
-    color: white;
-    top: 50%;
-    left: 10%;
+     left: 86%;
+     top: 87%;
 }
